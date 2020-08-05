@@ -2,7 +2,7 @@
 
 hadoop的mapreduce计算框架，采用两种手段进行优化，这里采用了hadoop streaming编程工具，只需自定义mapper和reducer的可执行程序或脚本，支持多语言来完成 。可结合hadoop在k8s上的部署进行操作，当数据量较大时，需要适当调整hadoop内存等相关配置，hadoop在k8s下的部署可参考：
 
-[hadoop在k8s上的部署]: https://github.com/wangzy0327/hadoop-cluster-k8s
+[hadoop在k8s上的部署]: (https://github.com/wangzy0327/hadoop-cluster-k8s)
 
 1. 每个maptask进行内部并行化，提高计算性能
 2. 对切片数量进行调参优化，设置最佳的切片数量，达到计算性能提升
