@@ -72,4 +72,5 @@ Java语言采用ThreadPoolExecutor线程池进行内部并行化
 5. multifile  多文件数据集进行wordcount计算
 6. max-min 统计数据集中频数最大的单词和频数最小的单词
 7. mean  统计人员的平均分数（多次mapreduce）
+8. mode  统计众数
 
