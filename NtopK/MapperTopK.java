@@ -34,16 +34,21 @@ public class MapperTopK {
             if(("exit").equals(line.trim()))
                 break;
             arrList.add(Integer.valueOf(line));
+            /*
             if(arrList.size() >= execLen){
                 List<Integer> res = Heap.findTopK(arrList,Math.min(arrList.size(),k));
-                sleepHelper();
+                //sleepHelper();
                 printList(res);
                 arrList.clear();
             }
+	    */
         }
         if(arrList != null && arrList.size() != 0){
-            List<Integer> res = Heap.findTopK(arrList,Math.min(arrList.size(),k));
-            printList(res);
+            long start = System.nanoTime();
+            List<Integer> res = Heap.findTopK(arrList,Math.min(arrList.size(),k),0,arrList.size()-1);
+            long time = System.nanoTime() - start;
+            System.out.printf("Tasks take %.3f us to run\n",time/1e3);
+            //printList(res);
         }
     }
 }

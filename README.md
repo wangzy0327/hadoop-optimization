@@ -73,4 +73,6 @@ Java语言采用ThreadPoolExecutor线程池进行内部并行化
 6. max-min 统计数据集中频数最大的单词和频数最小的单词
 7. mean  统计人员的平均分数（多次mapreduce）
 8. mode  统计众数
+9. avg  求平均值
+10. std-dev  求标准差
 

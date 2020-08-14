@@ -10,7 +10,7 @@ public class Reducer {
             String line = sc.nextLine().trim();
             if(("exit").equals(line))
                 break;
-            String[] eles = line.split(":");
+            String[] eles = line.split("\t");
             if(eles.length != 2)
                 throw new IllegalArgumentException();
             if(map.containsKey(eles[0].trim())) {
