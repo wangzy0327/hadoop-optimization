@@ -61,7 +61,7 @@ input_file_num : 输入文件的个数
 
 python3语言由于多线程对Python虚拟机的访问由全局解释器（GIL）来控制，这个锁保证同时只有一个线程在运行，并不能进行多核的并行执行。所以采用multiprocess多子进程方式进行并行优化。
 
-Java语言采用ThreadPoolExecutor线程池进行内部并行化
+Java语言前期采用ThreadPoolExecutor线程池进行内部多线程并发，后期采用数据拆分的方法避免加锁，实现并行化，提高计算的并行度。
 
 ### 示例
 
@@ -76,3 +76,6 @@ Java语言采用ThreadPoolExecutor线程池进行内部并行化
 9. avg  求平均值
 10. std-dev  求标准差
 
+11.normalization 求归一化
+
+12.large-avg-num  求大于平均数的个数
